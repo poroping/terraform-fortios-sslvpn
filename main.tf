@@ -5,7 +5,8 @@
  * 
  * Will create SSLVPN portal and settings for split and optionally full tunnel.
  * 
- * Firewall policies will need to be created manually.
+ * Firewall policies will need to be created manually. 
+ * Users/groups will be needed to created and added to the created group.
  * 
  * ## Usage:
  *
@@ -41,11 +42,11 @@
  *   source  = "poroping/sslvpn/fortios"
  *   version = "0.2.0"
  * 
- *   ssl_interface    = data.fortios_system_interface.wan
+ *   ssl_interface = data.fortios_system_interface.wan
  * }
  * ```
  * 
- * ### Example of 'terraform-fortios-sslvpn' module.
+ * ### Advanced example of 'terraform-fortios-sslvpn' module.
  *
  *
  * ```hcl
