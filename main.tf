@@ -312,7 +312,7 @@ resource "fortios_firewallservice_custom" "custom_sslvpn_port" {
 resource "fortios_firewall_policy" "vpn_loopback_in" {
   count = var.ssl_interface.type == "loopback" ? 1 : 0
 
-  vdomparam             = var.vdom
+  vdomparam = var.vdom
 
   action     = "accept"
   logtraffic = "utm"
